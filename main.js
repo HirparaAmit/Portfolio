@@ -316,6 +316,27 @@ function initTypingEffect() {
     type();
 }
 
+function initMobileMenu() {
+    const toggle = document.querySelector('.menu-toggle');
+    const nav = document.querySelector('.nav-links');
+    const links = document.querySelectorAll('.nav-links a');
+
+    if (!toggle || !nav) return;
+
+    toggle.addEventListener('click', () => {
+        toggle.classList.toggle('active');
+        nav.classList.toggle('active');
+    });
+
+    // Close menu when clicking a link
+    links.forEach(link => {
+        link.addEventListener('click', () => {
+            toggle.classList.remove('active');
+            nav.classList.remove('active');
+        });
+    });
+}
+
 // Initialize everything
 window.onload = () => {
     initContent();
@@ -324,5 +345,6 @@ window.onload = () => {
     initScrollProgress();
     initMouseGlow();
     initTypingEffect();
+    initMobileMenu();
 };
 
