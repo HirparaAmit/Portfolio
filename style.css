@@ -308,11 +308,11 @@ canvas#bg-canvas {
 }
 
 .tech-badge {
-    padding: 0.3rem 0.8rem;
+    padding: 0.4rem 1rem;
     background: rgba(99, 102, 241, 0.1);
     border: 1px solid rgba(99, 102, 241, 0.2);
     border-radius: 20px;
-    font-size: 0.75rem;
+    font-size: 0.9rem;
     color: var(--acc-primary);
     font-weight: 600;
 }
@@ -326,9 +326,9 @@ canvas#bg-canvas {
 
 .skill-category h4 {
     color: var(--acc-secondary);
-    margin-bottom: 1rem;
+    margin-bottom: 1.2rem;
     text-transform: uppercase;
-    font-size: 0.8rem;
+    font-size: 1rem;
     letter-spacing: 2px;
 }
 
